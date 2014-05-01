@@ -1,0 +1,27 @@
+{
+  "name": "geevcookie/HeyBuddy",
+  "description": "Queue processing for PHP.",
+  "keywords": ["heybuddy", "queue"],
+  "license": "GPLv2",
+  "authors": [
+    {
+      "name": "Zander Janse van Rensburg",
+      "email": "zjvren@geevcookie.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "HeyBuddy\\": "src/"
+    }
+  },
+  "require": {
+    "predis/predis": "dev-master"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.0",
+    "mockery/mockery": "~0.9"
+  },
+  "suggest": {
+    "predis/predis": "Allows the use of Redis as queue backend."
+  }
+}
